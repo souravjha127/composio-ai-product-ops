@@ -1,0 +1,757 @@
+[
+  {
+    "sample_id": 1,
+    "app": "Otter AI",
+    "category": "AI Research and Media",
+    "website": "https://otter.ai",
+    "docs_hint": "https://help.otter.ai",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "failed",
+    "human_check": {
+      "checked": true,
+      "authentication": "Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "blocked",
+      "notes": "Official public API documentation describes Bearer-token authentication and availability for Enterprise workspaces.",
+      "evidence_urls": [
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+      ]
+    }
+  },
+  {
+    "sample_id": 2,
+    "app": "Pipedrive",
+    "category": "CRM and Sales",
+    "website": "https://www.pipedrive.com",
+    "docs_hint": "https://developers.pipedrive.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "narrow",
+      "mcp": "found",
+      "buildability": "blocked"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": true,
+      "authentication": "OAuth2; API key",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "notes": "Official API reference documents a RESTful API, API token authentication, OAuth 2.0 and broad coverage of core product resources.",
+      "evidence_urls": [
+        "https://developers.pipedrive.com/docs/api/v1",
+        "https://developers.pipedrive.com/docs/api/v1/Oauth"
+      ]
+    }
+  },
+  {
+    "sample_id": 3,
+    "app": "Salesforce",
+    "category": "CRM and Sales",
+    "website": "https://www.salesforce.com",
+    "docs_hint": "https://developer.salesforce.com/docs",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": true,
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "notes": "Official Salesforce REST API documentation confirms OAuth 2.0 authorization and bearer access tokens. Developer Edition is available for testing and development.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html"
+      ]
+    }
+  },
+  {
+    "sample_id": 4,
+    "app": "Pumble",
+    "category": "Communications and Messaging",
+    "website": "https://pumble.com",
+    "docs_hint": "https://pumble.com/help",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "API key",
+      "credential_access": "self_serve_free",
+      "api_surface": "SDK",
+      "api_breadth": "moderate",
+      "mcp": "found",
+      "buildability": "ready"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": true,
+      "authentication": "API key",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "conditional",
+      "notes": "Pumble documents API-key generation and API access. The API requires the relevant API addon/workspace setup.",
+      "evidence_urls": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+      ]
+    }
+  },
+  {
+    "sample_id": 5,
+    "app": "MrScraper",
+    "category": "Data SEO and Scraping",
+    "website": "https://mrscraper.com",
+    "docs_hint": "https://docs.mrscraper.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "found",
+      "buildability": "ready"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": true,
+      "authentication": "API key",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "found",
+      "buildability": "ready",
+      "notes": "Official documentation provides a REST API with API-token authentication and documents an MCP server.",
+      "evidence_urls": [
+        "https://docs.mrscraper.com/docs/api/overview",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+      ]
+    }
+  },
+  {
+    "sample_id": 6,
+    "app": "Cloudflare",
+    "category": "Developer Infra and Data",
+    "website": "https://www.cloudflare.com",
+    "docs_hint": "https://developers.cloudflare.com/api",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; API key; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST; GraphQL",
+      "api_breadth": "moderate",
+      "mcp": "found",
+      "buildability": "ready"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "API key; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://developers.cloudflare.com/api/overview/",
+        "https://developers.cloudflare.com/fundamentals/api/how-to/"
+      ]
+    }
+  },
+  {
+    "sample_id": 7,
+    "app": "BigCommerce",
+    "category": "Ecommerce",
+    "website": "https://www.bigcommerce.com",
+    "docs_hint": "https://developer.bigcommerce.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; API key; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST; GraphQL",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "blocked"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; Bearer/token; Basic",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST; GraphQL",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth"
+      ]
+    }
+  },
+  {
+    "sample_id": 8,
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "website": "https://www.binance.com",
+    "docs_hint": "https://developers.binance.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "confirmed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "API key; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://developers.binance.com/en/docs/products/spot/rest-api",
+        "https://github.com/binance/binance-spot-api-docs/blob/master/faqs/api_key_types.md"
+      ]
+    }
+  },
+  {
+    "sample_id": 9,
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "website": "https://pitchbook.com",
+    "docs_hint": "https://pitchbook.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "failed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "API key; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "blocked",
+      "evidence_urls": [
+        "https://pitchbook.com/help/PitchBook-api"
+      ]
+    }
+  },
+  {
+    "sample_id": 10,
+    "app": "Plaid",
+    "category": "Finance and Fintech",
+    "website": "https://plaid.com",
+    "docs_hint": "https://plaid.com/docs",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2",
+      "credential_access": "partner_gated",
+      "api_surface": "REST; SDK",
+      "api_breadth": "moderate",
+      "mcp": "found",
+      "buildability": "blocked"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "conditional",
+      "evidence_urls": [
+        "https://plaid.com/docs/api/oauth/",
+        "https://plaid.com/docs/"
+      ]
+    }
+  },
+  {
+    "sample_id": 11,
+    "app": "Meta Ads",
+    "category": "Marketing Ads Email Social",
+    "website": "https://www.facebook.com/business",
+    "docs_hint": "https://developers.facebook.com/docs/marketing-apis",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "failed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "conditional",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/marketing-api/"
+      ]
+    }
+  },
+  {
+    "sample_id": 12,
+    "app": "SendGrid",
+    "category": "Marketing Ads Email Social",
+    "website": "https://sendgrid.com",
+    "docs_hint": "https://docs.sendgrid.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; API key; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "blocked"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "API key; Bearer/token; Basic",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+        "https://www.twilio.com/docs/sendgrid/api-reference/api-keys"
+      ]
+    }
+  },
+  {
+    "sample_id": 13,
+    "app": "Threads",
+    "category": "Marketing Ads Email Social",
+    "website": "https://www.threads.net",
+    "docs_hint": "https://developers.facebook.com/docs/threads",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "unknown",
+      "credential_access": "unknown",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "unknown",
+      "buildability": "unknown"
+    },
+    "verification_status": "confirmed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/threads/"
+      ]
+    }
+  },
+  {
+    "sample_id": 14,
+    "app": "Airtable",
+    "category": "Productivity and Project Management",
+    "website": "https://www.airtable.com",
+    "docs_hint": "https://airtable.com/developers",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "unknown",
+      "api_breadth": "unknown",
+      "mcp": "found",
+      "buildability": "conditional"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens"
+      ]
+    }
+  },
+  {
+    "sample_id": 15,
+    "app": "Asana",
+    "category": "Productivity and Project Management",
+    "website": "https://asana.com",
+    "docs_hint": "https://developers.asana.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "found",
+      "buildability": "ready"
+    },
+    "verification_status": "confirmed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/oauth",
+        "https://developers.asana.com/docs/personal-access-token"
+      ]
+    }
+  },
+  {
+    "sample_id": 16,
+    "app": "Linear",
+    "category": "Productivity and Project Management",
+    "website": "https://linear.app",
+    "docs_hint": "https://developers.linear.app",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; API key; Basic; Bearer/token",
+      "credential_access": "unknown",
+      "api_surface": "GraphQL; SDK",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "conditional"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; API key",
+      "credential_access": "self_serve_free",
+      "api_surface": "GraphQL; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://linear.app/developers/graphql",
+        "https://linear.app/developers/oauth-2-0-authentication"
+      ]
+    }
+  },
+  {
+    "sample_id": 17,
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "website": "https://www.notion.com",
+    "docs_hint": "https://developers.notion.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; Bearer/token",
+      "credential_access": "paid_plan",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "conditional"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://www.notion.com/help/create-integrations-with-the-notion-api"
+      ]
+    }
+  },
+  {
+    "sample_id": 18,
+    "app": "Gladly",
+    "category": "Support and Helpdesk",
+    "website": "https://www.gladly.com",
+    "docs_hint": "https://developer.gladly.com",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "Basic; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "blocked"
+    },
+    "verification_status": "confirmed",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "Basic; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "conditional",
+      "evidence_urls": [
+        "https://developer.gladly.com/rest/",
+        "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks"
+      ]
+    }
+  },
+  {
+    "sample_id": 19,
+    "app": "Plain",
+    "category": "Support and Helpdesk",
+    "website": "https://plain.com",
+    "docs_hint": "https://www.plain.com/docs",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "API key; Bearer/token",
+      "credential_access": "unknown",
+      "api_surface": "REST; GraphQL; SDK",
+      "api_breadth": "moderate",
+      "mcp": "found",
+      "buildability": "conditional"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "Bearer/token",
+      "credential_access": "self_serve_free",
+      "api_surface": "GraphQL",
+      "api_breadth": "moderate",
+      "mcp": "unknown",
+      "buildability": "ready",
+      "evidence_urls": [
+        "https://www.plain.com/docs/api"
+      ]
+    }
+  },
+  {
+    "sample_id": 20,
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "website": "https://www.zendesk.com",
+    "docs_hint": "https://developer.zendesk.com/api-reference",
+    "first_pass": {
+      "authentication": null,
+      "credential_access": null,
+      "api_surface": null,
+      "api_breadth": null,
+      "mcp": null,
+      "buildability": null
+    },
+    "verified": {
+      "authentication": "OAuth2; API key; Basic; Bearer/token",
+      "credential_access": "partner_gated",
+      "api_surface": "REST; SDK",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "blocked"
+    },
+    "verification_status": "corrected",
+    "human_check": {
+      "checked": false,
+      "review_status": "pending_user_confirmation",
+      "authentication": "OAuth2; API key; Bearer/token",
+      "credential_access": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": "unknown",
+      "buildability": "conditional",
+      "evidence_urls": [
+        "https://developer.zendesk.com/documentation/authentication/",
+        "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+      ]
+    }
+  }
+]
